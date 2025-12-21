@@ -161,7 +161,7 @@ void shiftGrid(int dir)
                     lastMerge = (dir == DIR_LEFT) ? targetIdx - 1 : targetIdx + 1;
                 }
                 changed = true;
-                setClick();
+                // setClick();
             }
             // Move
             else if (targetIdx != j)

@@ -5,13 +5,25 @@ const unsigned long debounceDelay = 30; // ms
 const unsigned long initialDelay = 500; // ms before auto-repeat
 const unsigned long repeatDelay = 100;  // ms between repeats
 
-Button wButton = {9, false, false, 0, 0, false};
-Button aButton = {20, false, false, 0, 0, false};
-Button sButton = {8, false, false, 0, 0, false};
-Button dButton = {10, false, false, 0, 0, false};
+// ## START HARDWARE ##
+Button wButton = {6, false, false, 0, 0, false};
+Button aButton = {4, false, false, 0, 0, false};
+Button sButton = {3, false, false, 0, 0, false};
+Button dButton = {2, false, false, 0, 0, false};
 
-Button menuButton = {3, false, false, 0, 0, false};
-Button restartButton = {2, false, false, 0, 0, false};
+Button menuButton = {7, false, false, 0, 0, false};
+Button restartButton = {5, false, false, 0, 0, false};
+// ## END HARDWARE ##
+
+// ## START WOKWI ##
+// Button wButton = {9, false, false, 0, 0, false};
+// Button aButton = {20, false, false, 0, 0, false};
+// Button sButton = {8, false, false, 0, 0, false};
+// Button dButton = {10, false, false, 0, 0, false};
+
+// Button menuButton = {3, false, false, 0, 0, false};
+// Button restartButton = {2, false, false, 0, 0, false};
+// ## END WOKWI ##
 
 int activeButtonPin = -1;
 

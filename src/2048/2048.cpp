@@ -34,7 +34,7 @@ void loop_2048(Adafruit_SSD1306 &oled)
     }
     if (read_button(restartButton))
     {
-        setClick();
+        // setClick();
         Serial.println("RESTART");
         resetGame(oled);
     }
