@@ -2,7 +2,6 @@
 #include <Adafruit_SSD1306.h>
 #include "game.h"
 #include "render.h"
-#include "relay.h"
 
 int highscores[10] = {5010, 5009, 5008, 5007, 5006, 5005, 5004, 5003, 5002, 5001};
 
@@ -161,7 +160,6 @@ void shiftGrid(int dir)
                     lastMerge = (dir == DIR_LEFT) ? targetIdx - 1 : targetIdx + 1;
                 }
                 changed = true;
-                setClick();
             }
             // Move
             else if (targetIdx != j)
