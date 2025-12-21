@@ -5,3 +5,5 @@
 
 > [!NOTE]  
 > This project uses different pins for hardware esp32 and the Wokwi simulator, as I'm using SPI on hardware but the Wokwi oled module only supports SPI. Comment out the relavent code blocks to build for either.
+
+![IMG_6640](https://github.com/user-attachments/assets/cac80b4c-a4d0-4472-a9b1-754636e443fa)
