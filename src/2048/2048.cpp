@@ -2,6 +2,7 @@
 #include "game.h"
 #include "render.h"
 #include "buttons.h"
+#include "relay.h"
 #include <Adafruit_SSD1306.h>
 
 bool setup_completed = false;
@@ -33,6 +34,7 @@ void loop_2048(Adafruit_SSD1306 &oled)
     }
     if (read_button(restartButton))
     {
+        // setClick();
         Serial.println("RESTART");
         resetGame(oled);
     }
