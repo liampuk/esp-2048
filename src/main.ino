@@ -3,7 +3,7 @@
 #include "buttons.h"
 #include "2048/2048.h"
 #include "menu/menu.h"
-#include "relay.h"
+#include "buzzer.h"
 
 #include <SPI.h>
 #include <Wire.h>
@@ -64,8 +64,8 @@ void setup()
     pinMode(restartButton.pin, INPUT_PULLUP);
 
 
-    pinMode(relayPin, OUTPUT);
-    digitalWrite(relayPin, LOW); // Relay off
+    pinMode(buzzerPin, OUTPUT);
+    digitalWrite(buzzerPin, LOW); // Buzzer initial state off
 }
 
 Mode prev_mode = M_MENU;

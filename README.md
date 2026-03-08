@@ -26,7 +26,7 @@
                     │   GPIO 20 ───  RST (reset)          │
                     │   (CS = -1, not connected)          │
                     │                                     │
-    Relay           │   GPIO 7 ───  Buzzer (click output) │
+    Buzzer          │   GPIO 7 ───  Buzzer (click output) │
                     │                                     │
                     └─────────────────────────────────────┘
 

@@ -2,7 +2,7 @@
 #include "game.h"
 #include "render.h"
 #include "buttons.h"
-#include "relay.h"
+#include "buzzer.h"
 #include <Adafruit_SSD1306.h>
 
 bool setup_completed = false;
