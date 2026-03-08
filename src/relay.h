@@ -1,6 +1,6 @@
 #pragma once
 
-const int relayPin = 4;
+const int relayPin = 7;
 
 void setClick();
 void playClick();

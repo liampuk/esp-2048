@@ -16,12 +16,12 @@
 #define OLED_MOSI 10
 #define OLED_CLK 8
 #define OLED_DC 9
-#define OLED_CS 21
 #define OLED_RESET 20
 
 // ## START HARDWARE ##
+// TODO fix gpio_num error on pin -1 for CS
 Adafruit_SSD1306 oled(SCREEN_WIDTH, SCREEN_HEIGHT,
-  OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+  OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, 0);
 // ## END HARDWARE ##
 
 // ## START WOKWI ##
@@ -64,8 +64,8 @@ void setup()
     pinMode(restartButton.pin, INPUT_PULLUP);
 
 
-    // pinMode(relayPin, OUTPUT);
-    // digitalWrite(relayPin, LOW); // Relay off
+    pinMode(relayPin, OUTPUT);
+    digitalWrite(relayPin, LOW); // Relay off
 }
 
 Mode prev_mode = M_MENU;
@@ -74,7 +74,7 @@ void loop()
 {
     if (read_button(menuButton))
     {
-        // setClick();
+        setClick();
         Serial.println("MENU");
         Mode temp = mode;
         mode = prev_mode;
@@ -94,5 +94,5 @@ void loop()
     {
         loop_menu(oled);
     }
-    // playClick();
+    playClick();
 }

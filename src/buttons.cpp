@@ -11,7 +11,7 @@ Button aButton = {4, false, false, 0, 0, false};
 Button sButton = {3, false, false, 0, 0, false};
 Button dButton = {2, false, false, 0, 0, false};
 
-Button menuButton = {7, false, false, 0, 0, false};
+Button menuButton = {21, false, false, 0, 0, false};
 Button restartButton = {5, false, false, 0, 0, false};
 // ## END HARDWARE ##
 
